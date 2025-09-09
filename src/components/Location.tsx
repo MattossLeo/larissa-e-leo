@@ -7,9 +7,9 @@ const Location = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="font-windsong text-5xl md:text-6xl text-rose-600 mb-4">
-            Wedding Venue
+            Local do Casamento
           </h2>
-          <p className="text-xl text-gray-600">Join us at our beautiful ceremony location</p>
+          <p className="text-xl text-gray-600">Junte-se a nós em nosso lindo local de cerimônia</p>
         </div>
 
         <div className="max-w-6xl mx-auto">
@@ -27,42 +27,42 @@ const Location = () => {
             <div className="order-1 lg:order-2 space-y-8">
               <div>
                 <h3 className="text-3xl font-semibold text-gray-800 mb-4">
-                  Ceremony & Reception
+                  Cerimônia e Recepção
                 </h3>
                 <div className="space-y-4">
                   <div className="flex items-start space-x-3">
                     <MapPin className="text-rose-600 mt-1" size={20} />
                     <div>
-                      <p className="font-medium text-gray-800">Beautiful Garden Venue</p>
-                      <p className="text-gray-600">123 Wedding Lane, Dream City, DC 12345</p>
+                      <p className="font-medium text-gray-800">Lindo Espaço Jardim</p>
+                      <p className="text-gray-600">Rua dos Sonhos, 123, Cidade dos Sonhos, SP 12345</p>
                     </div>
                   </div>
                   
                   <div className="flex items-start space-x-3">
                     <Calendar className="text-rose-600 mt-1" size={20} />
                     <div>
-                      <p className="font-medium text-gray-800">April 11, 2026</p>
-                      <p className="text-gray-600">Saturday</p>
+                      <p className="font-medium text-gray-800">11 de Abril, 2026</p>
+                      <p className="text-gray-600">Sábado</p>
                     </div>
                   </div>
                   
                   <div className="flex items-start space-x-3">
                     <Clock className="text-rose-600 mt-1" size={20} />
                     <div>
-                      <p className="font-medium text-gray-800">4:00 PM</p>
-                      <p className="text-gray-600">Ceremony begins</p>
+                      <p className="font-medium text-gray-800">16:00</p>
+                      <p className="text-gray-600">Início da cerimônia</p>
                     </div>
                   </div>
                 </div>
               </div>
 
               <div className="bg-rose-50 p-6 rounded-xl">
-                <h4 className="font-semibold text-gray-800 mb-2">Important Notes:</h4>
+                <h4 className="font-semibold text-gray-800 mb-2">Informações Importantes:</h4>
                 <ul className="text-gray-600 space-y-1 text-sm">
-                  <li>• Parking is available on-site</li>
-                  <li>• Outdoor ceremony (weather permitting)</li>
-                  <li>• Cocktail hour immediately following ceremony</li>
-                  <li>• Reception with dinner and dancing until 11 PM</li>
+                  <li>• Estacionamento disponível no local</li>
+                  <li>• Cerimônia ao ar livre (dependendo do clima)</li>
+                  <li>• Coquetel logo após a cerimônia</li>
+                  <li>• Recepção com jantar e dança até às 23h</li>
                 </ul>
               </div>
             </div>
@@ -79,7 +79,7 @@ const Location = () => {
                 allowFullScreen={true}
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Wedding Venue Location"
+                title="Localização do Local do Casamento"
               ></iframe>
             </div>
           </div>

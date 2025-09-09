@@ -20,11 +20,11 @@ const Hero = () => {
         </h1>
         <div className="w-32 h-1 bg-gradient-to-r from-rose-400 to-pink-400 mx-auto mb-6"></div>
         <p className="text-xl md:text-2xl font-light mb-8 drop-shadow-lg">
-          Together Forever
+          Juntos Para Sempre
         </p>
         <div className="text-lg md:text-xl font-medium">
-          <p className="mb-2">April 11, 2026</p>
-          <p className="opacity-90">Save the Date</p>
+          <p className="mb-2">11 de Abril, 2026</p>
+          <p className="opacity-90">Reserve a Data</p>
         </div>
       </div>
 

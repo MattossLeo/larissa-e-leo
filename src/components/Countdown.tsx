@@ -9,7 +9,7 @@ const Countdown = () => {
   });
 
   useEffect(() => {
-    const weddingDate = new Date('April 11, 2026 00:00:00').getTime();
+    const weddingDate = new Date('2026-04-11T00:00:00').getTime();
 
     const timer = setInterval(() => {
       const now = new Date().getTime();
@@ -28,13 +28,20 @@ const Countdown = () => {
     return () => clearInterval(timer);
   }, []);
 
+  const timeLabels = {
+    days: 'dias',
+    hours: 'horas',
+    minutes: 'minutos',
+    seconds: 'segundos'
+  };
+
   return (
     <section className="py-20 bg-gradient-to-r from-rose-100 to-pink-100">
       <div className="container mx-auto px-4 text-center">
         <h2 className="font-windsong text-5xl md:text-6xl text-rose-600 mb-4">
-          Our Big Day
+          Nosso Grande Dia
         </h2>
-        <p className="text-xl text-gray-600 mb-12">Counting down to forever</p>
+        <p className="text-xl text-gray-600 mb-12">Contagem regressiva para o para sempre</p>
         
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
           {Object.entries(timeLeft).map(([unit, value]) => (
@@ -43,7 +50,7 @@ const Countdown = () => {
                 {value.toString().padStart(2, '0')}
               </div>
               <div className="text-gray-600 uppercase tracking-wide text-sm font-medium">
-                {unit}
+                {timeLabels[unit as keyof typeof timeLabels]}
               </div>
             </div>
           ))}

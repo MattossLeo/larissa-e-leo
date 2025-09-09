@@ -36,11 +36,11 @@ const RSVP = () => {
             <div className="bg-white rounded-2xl p-12 shadow-xl">
               <div className="text-6xl mb-6">💌</div>
               <h2 className="font-windsong text-4xl text-rose-600 mb-4">
-                Thank You!
+                Obrigado!
               </h2>
               <p className="text-xl text-gray-600">
-                We've received your RSVP and are so excited to celebrate with you!
-                We'll be in touch with more details closer to the wedding date.
+                Recebemos sua confirmação de presença e estamos muito animados para celebrar com você!
+                Entraremos em contato com mais detalhes próximo à data do casamento.
               </p>
             </div>
           </div>
@@ -54,11 +54,11 @@ const RSVP = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="font-windsong text-5xl md:text-6xl text-rose-600 mb-4">
-            RSVP
+            Confirmar Presença
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            We can't wait to celebrate with you! Please let us know if you'll be joining us 
-            for our special day.
+            Mal podemos esperar para celebrar com você! Por favor, nos informe se você estará 
+            conosco em nosso dia especial.
           </p>
         </div>
 
@@ -67,7 +67,7 @@ const RSVP = () => {
             <div className="grid md:grid-cols-2 gap-6 mb-6">
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-2">
-                  Full Name *
+                  Nome Completo *
                 </label>
                 <input
                   type="text"
@@ -81,7 +81,7 @@ const RSVP = () => {
               
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-2">
-                  Email Address *
+                  Endereço de Email *
                 </label>
                 <input
                   type="email"
@@ -97,7 +97,7 @@ const RSVP = () => {
             <div className="grid md:grid-cols-2 gap-6 mb-6">
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-2">
-                  Phone Number
+                  Número de Telefone
                 </label>
                 <input
                   type="tel"
@@ -110,7 +110,7 @@ const RSVP = () => {
               
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-2">
-                  Number of Guests *
+                  Número de Convidados *
                 </label>
                 <select
                   name="guests"
@@ -119,18 +119,18 @@ const RSVP = () => {
                   onChange={handleChange}
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-rose-500 focus:border-transparent transition-colors duration-300"
                 >
-                  <option value="1">1 Guest</option>
-                  <option value="2">2 Guests</option>
-                  <option value="3">3 Guests</option>
-                  <option value="4">4 Guests</option>
-                  <option value="5">5+ Guests</option>
+                  <option value="1">1 Convidado</option>
+                  <option value="2">2 Convidados</option>
+                  <option value="3">3 Convidados</option>
+                  <option value="4">4 Convidados</option>
+                  <option value="5">5+ Convidados</option>
                 </select>
               </div>
             </div>
 
             <div className="mb-6">
               <label className="block text-sm font-medium text-gray-700 mb-4">
-                Will you be attending? *
+                Você estará presente? *
               </label>
               <div className="grid md:grid-cols-2 gap-4">
                 <label className="flex items-center p-4 border-2 border-gray-200 rounded-lg cursor-pointer hover:border-rose-300 transition-colors duration-300">
@@ -143,8 +143,8 @@ const RSVP = () => {
                     className="text-rose-600 mr-3"
                   />
                   <div>
-                    <div className="font-medium text-gray-800">Yes, I'll be there!</div>
-                    <div className="text-sm text-gray-600">Can't wait to celebrate</div>
+                    <div className="font-medium text-gray-800">Sim, estarei lá!</div>
+                    <div className="text-sm text-gray-600">Mal posso esperar para celebrar</div>
                   </div>
                 </label>
                 
@@ -158,8 +158,8 @@ const RSVP = () => {
                     className="text-rose-600 mr-3"
                   />
                   <div>
-                    <div className="font-medium text-gray-800">Sorry, can't make it</div>
-                    <div className="text-sm text-gray-600">Will be there in spirit</div>
+                    <div className="font-medium text-gray-800">Desculpe, não posso ir</div>
+                    <div className="text-sm text-gray-600">Estarei lá em espírito</div>
                   </div>
                 </label>
               </div>
@@ -167,28 +167,28 @@ const RSVP = () => {
 
             <div className="mb-6">
               <label className="block text-sm font-medium text-gray-700 mb-2">
-                Dietary Restrictions or Allergies
+                Restrições Alimentares ou Alergias
               </label>
               <input
                 type="text"
                 name="dietaryRestrictions"
                 value={formData.dietaryRestrictions}
                 onChange={handleChange}
-                placeholder="Let us know about any dietary needs..."
+                placeholder="Nos informe sobre necessidades alimentares..."
                 className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-rose-500 focus:border-transparent transition-colors duration-300"
               />
             </div>
 
             <div className="mb-8">
               <label className="block text-sm font-medium text-gray-700 mb-2">
-                Special Message for the Couple
+                Mensagem Especial para o Casal
               </label>
               <textarea
                 name="message"
                 value={formData.message}
                 onChange={handleChange}
                 rows={4}
-                placeholder="Share your wishes, memories, or any special message..."
+                placeholder="Compartilhe seus desejos, memórias ou qualquer mensagem especial..."
                 className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-rose-500 focus:border-transparent transition-colors duration-300 resize-none"
               ></textarea>
             </div>
@@ -198,7 +198,7 @@ const RSVP = () => {
               className="w-full bg-gradient-to-r from-rose-500 to-pink-500 text-white py-4 rounded-lg font-medium text-lg hover:from-rose-600 hover:to-pink-600 transition-all duration-300 transform hover:scale-105"
             >
               <Send className="inline-block w-5 h-5 mr-2" />
-              Send RSVP
+              Enviar Confirmação
             </button>
           </form>
         </div>

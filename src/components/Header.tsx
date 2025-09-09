@@ -31,13 +31,19 @@ const Header = () => {
           
           {/* Desktop Navigation */}
           <div className="hidden md:flex space-x-8">
-            {['Home', 'About', 'Registry', 'Location', 'RSVP'].map((item) => (
+            {[
+              { en: 'Home', pt: 'Início' },
+              { en: 'About', pt: 'Sobre Nós' },
+              { en: 'Registry', pt: 'Lista de Presentes' },
+              { en: 'Location', pt: 'Local' },
+              { en: 'RSVP', pt: 'Confirmar Presença' }
+            ].map((item) => (
               <button
-                key={item}
-                onClick={() => scrollToSection(item.toLowerCase())}
+                key={item.en}
+                onClick={() => scrollToSection(item.en.toLowerCase())}
                 className="text-gray-700 hover:text-rose-600 transition-colors duration-300 font-medium"
               >
-                {item}
+                {item.pt}
               </button>
             ))}
           </div>
@@ -54,13 +60,19 @@ const Header = () => {
         {/* Mobile Navigation Menu */}
         {isMenuOpen && (
           <div className="md:hidden mt-4 py-4 bg-white rounded-lg shadow-lg">
-            {['Home', 'About', 'Registry', 'Location', 'RSVP'].map((item) => (
+            {[
+              { en: 'Home', pt: 'Início' },
+              { en: 'About', pt: 'Sobre Nós' },
+              { en: 'Registry', pt: 'Lista de Presentes' },
+              { en: 'Location', pt: 'Local' },
+              { en: 'RSVP', pt: 'Confirmar Presença' }
+            ].map((item) => (
               <button
-                key={item}
-                onClick={() => scrollToSection(item.toLowerCase())}
+                key={item.en}
+                onClick={() => scrollToSection(item.en.toLowerCase())}
                 className="block w-full text-left px-4 py-2 text-gray-700 hover:text-rose-600 hover:bg-rose-50 transition-colors duration-300"
               >
-                {item}
+                {item.pt}
               </button>
             ))}
           </div>

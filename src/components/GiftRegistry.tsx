@@ -21,42 +21,42 @@ const GiftRegistry = () => {
   const [gifts, setGifts] = useState<GiftItem[]>([
     {
       id: 1,
-      name: "Coffee Machine",
+      name: "Máquina de Café",
       price: 299,
       image: "https://images.pexels.com/photos/4226896/pexels-photo-4226896.jpeg?auto=compress&cs=tinysrgb&w=400",
       claimed: false
     },
     {
       id: 2,
-      name: "Dinner Set",
+      name: "Jogo de Jantar",
       price: 199,
       image: "https://images.pexels.com/photos/1449773/pexels-photo-1449773.jpeg?auto=compress&cs=tinysrgb&w=400",
       claimed: false
     },
     {
       id: 3,
-      name: "Stand Mixer",
+      name: "Batedeira Planetária",
       price: 349,
       image: "https://images.pexels.com/photos/4226903/pexels-photo-4226903.jpeg?auto=compress&cs=tinysrgb&w=400",
       claimed: false
     },
     {
       id: 4,
-      name: "Bed Sheets Set",
+      name: "Jogo de Lençóis",
       price: 89,
       image: "https://images.pexels.com/photos/1129413/pexels-photo-1129413.jpeg?auto=compress&cs=tinysrgb&w=400",
       claimed: false
     },
     {
       id: 5,
-      name: "Cookware Set",
+      name: "Conjunto de Panelas",
       price: 259,
       image: "https://images.pexels.com/photos/4226771/pexels-photo-4226771.jpeg?auto=compress&cs=tinysrgb&w=400",
       claimed: false
     },
     {
       id: 6,
-      name: "Vacuum Cleaner",
+      name: "Aspirador de Pó",
       price: 179,
       image: "https://images.pexels.com/photos/4099467/pexels-photo-4099467.jpeg?auto=compress&cs=tinysrgb&w=400",
       claimed: false
@@ -81,7 +81,7 @@ const GiftRegistry = () => {
       setIsModalOpen(false);
       setSelectedGift(null);
       setFormData({ name: '', phone: '', paymentMethod: 'buy' });
-      alert('Thank you for your generous gift! We\'ll be in touch with more details.');
+      alert('Obrigado pelo seu presente generoso! Entraremos em contato com mais detalhes.');
     }
   };
 
@@ -90,11 +90,11 @@ const GiftRegistry = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="font-windsong text-5xl md:text-6xl text-rose-600 mb-4">
-            Gift Registry
+            Lista de Presentes
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Your presence is the greatest gift, but if you'd like to help us start our new life together, 
-            here are some items we'd love to have in our home.
+            Sua presença é o maior presente, mas se você gostaria de nos ajudar a começar nossa nova 
+            vida juntos, aqui estão alguns itens que adoraríamos ter em nosso lar.
           </p>
         </div>
 
@@ -110,7 +110,7 @@ const GiftRegistry = () => {
                 {gift.claimed && (
                   <div className="absolute inset-0 bg-gray-900/50 flex items-center justify-center">
                     <span className="bg-green-500 text-white px-4 py-2 rounded-full font-medium">
-                      Already Claimed
+                      Já Escolhido
                     </span>
                   </div>
                 )}
@@ -128,7 +128,7 @@ const GiftRegistry = () => {
                   }`}
                 >
                   <Gift className="inline-block w-5 h-5 mr-2" />
-                  {gift.claimed ? 'Already Claimed' : 'Select This Gift'}
+                  {gift.claimed ? 'Já Escolhido' : 'Escolher Este Presente'}
                 </button>
               </div>
             </div>
@@ -141,7 +141,7 @@ const GiftRegistry = () => {
             <div className="bg-white rounded-2xl max-w-md w-full p-6">
               <div className="flex items-center justify-between mb-6">
                 <h3 className="text-2xl font-semibold text-gray-800">
-                  Gift Selection: {selectedGift.name}
+                  Seleção de Presente: {selectedGift.name}
                 </h3>
                 <button
                   onClick={() => setIsModalOpen(false)}
@@ -154,7 +154,7 @@ const GiftRegistry = () => {
               <form onSubmit={handleSubmit}>
                 <div className="mb-4">
                   <label className="block text-sm font-medium text-gray-700 mb-2">
-                    Your Name *
+                    Seu Nome *
                   </label>
                   <input
                     type="text"
@@ -167,7 +167,7 @@ const GiftRegistry = () => {
 
                 <div className="mb-4">
                   <label className="block text-sm font-medium text-gray-700 mb-2">
-                    Phone Number *
+                    Número de Telefone *
                   </label>
                   <input
                     type="tel"
@@ -180,7 +180,7 @@ const GiftRegistry = () => {
 
                 <div className="mb-6">
                   <label className="block text-sm font-medium text-gray-700 mb-2">
-                    Gift Option
+                    Opção do Presente
                   </label>
                   <div className="space-y-2">
                     <label className="flex items-center">
@@ -191,7 +191,7 @@ const GiftRegistry = () => {
                         onChange={(e) => setFormData({ ...formData, paymentMethod: e.target.value })}
                         className="text-rose-600"
                       />
-                      <span className="ml-2">I will buy and deliver the gift</span>
+                      <span className="ml-2">Vou comprar e entregar o presente</span>
                     </label>
                     <label className="flex items-center">
                       <input
@@ -201,7 +201,7 @@ const GiftRegistry = () => {
                         onChange={(e) => setFormData({ ...formData, paymentMethod: e.target.value })}
                         className="text-rose-600"
                       />
-                      <span className="ml-2">I prefer to send money for this gift</span>
+                      <span className="ml-2">Prefiro enviar dinheiro para este presente</span>
                     </label>
                   </div>
                 </div>
@@ -210,7 +210,7 @@ const GiftRegistry = () => {
                   type="submit"
                   className="w-full bg-rose-600 text-white py-3 rounded-lg font-medium hover:bg-rose-700 transition-colors duration-300"
                 >
-                  Confirm Gift Selection
+                  Confirmar Seleção do Presente
                 </button>
               </form>
             </div>
