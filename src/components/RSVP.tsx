@@ -7,18 +7,39 @@ const RSVP = () => {
     email: '',
     phone: '',
     guests: '1',
-    attendance: '',
-    dietaryRestrictions: '',
-    message: ''
+    attendance: ''
   });
 
   const [isSubmitted, setIsSubmitted] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Here you would typically send the data to a server
-    console.log('RSVP Data:', formData);
-    setIsSubmitted(true);
+
+    const form = new FormData();
+
+    // Identificador do tipo de envio
+    form.append('tipo', 'RSVP');
+
+    form.append('nome', formData.name);
+    form.append('email', formData.email);
+    form.append('telefone', formData.phone);
+    form.append('quantidade_convidados', formData.guests);
+    form.append('presenca', formData.attendance);
+
+    try {
+      await fetch(
+        'https://script.google.com/macros/s/AKfycbwN18ySatwS8HwlbdVFKI07lpth-LLvCEZazR0YZhrAmFuc0x5-f6qITTr0nJBPR2rt/exec?gid=0',
+        {
+          method: 'POST',
+          mode: 'no-cors',
+          body: form,
+        }
+      );
+
+      setIsSubmitted(true);
+    } catch (error) {
+      alert('Erro ao enviar confirmação. Tente novamente.');
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
@@ -164,35 +185,6 @@ const RSVP = () => {
                 </label>
               </div>
             </div>
-
-            <div className="mb-6">
-              <label className="block text-sm font-medium text-gray-700 mb-2">
-                Restrições Alimentares ou Alergias
-              </label>
-              <input
-                type="text"
-                name="dietaryRestrictions"
-                value={formData.dietaryRestrictions}
-                onChange={handleChange}
-                placeholder="Nos informe sobre necessidades alimentares..."
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-rose-500 focus:border-transparent transition-colors duration-300"
-              />
-            </div>
-
-            <div className="mb-8">
-              <label className="block text-sm font-medium text-gray-700 mb-2">
-                Mensagem Especial para o Casal
-              </label>
-              <textarea
-                name="message"
-                value={formData.message}
-                onChange={handleChange}
-                rows={4}
-                placeholder="Compartilhe seus desejos, memórias ou qualquer mensagem especial..."
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-rose-500 focus:border-transparent transition-colors duration-300 resize-none"
-              ></textarea>
-            </div>
-
             <button
               type="submit"
               className="w-full bg-gradient-to-r from-rose-500 to-pink-500 text-white py-4 rounded-lg font-medium text-lg hover:from-rose-600 hover:to-pink-600 transition-all duration-300 transform hover:scale-105"
