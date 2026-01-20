@@ -212,6 +212,12 @@ const GiftRegistry = () => {
     <section className="py-20 bg-gradient-to-br from-pink-50 to-rose-50">
       <div className="container mx-auto px-4">
 
+        <div className='text-center'>
+          <h2 className='font-windsong text-5xl md:text-6xl text-rose-600 mb-4'>
+            Lista de Presente
+          </h2>
+          <p className='text-xl text-gray-600  mb-4'>Nosso maior presente é a sua presença. Mas caso queira dar algo, separamos uma lista abaixo:</p>
+        </div>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {gifts.map(gift => (
             <div key={gift.id} className="bg-white rounded-2xl shadow-lg overflow-hidden">
