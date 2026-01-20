@@ -41,7 +41,7 @@ const Header = () => {
               <button
                 key={item.en}
                 onClick={() => scrollToSection(item.en.toLowerCase())}
-                className="text-gray-700 hover:text-rose-600 transition-colors duration-300 font-medium"
+                className="text-white hover:text-rose-600 transition-colors duration-300 font-medium"
               >
                 {item.pt}
               </button>
