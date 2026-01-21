@@ -31,7 +31,7 @@ const GiftRegistry = () => {
   },
   {
     id: 2,
-    name: "Jogo de Copos",
+    name: "Jogo de Copos (2)",
     price: 34.97,
     image: "https://m.media-amazon.com/images/I/51JvLuUbaUL._AC_SL1000_.jpg",
     claimed: false
@@ -59,7 +59,7 @@ const GiftRegistry = () => {
   },
   {
     id: 6,
-    name: "Garrafas de Água",
+    name: "Garrafas de Água de Vidro (4)",
     price: 22.9,
     image: "https://m.media-amazon.com/images/I/41SLX0+OcDL._AC_SX679_.jpg",
     claimed: false
@@ -73,14 +73,14 @@ const GiftRegistry = () => {
   },
   {
     id: 8,
-    name: "Travessa de Vidro",
+    name: "Travessa de Vidro (3)",
     price: 65.9,
     image: "https://m.media-amazon.com/images/I/61pJO7eBJlL._AC_SX679_.jpg",
     claimed: false
   },
   {
     id: 9,
-    name: "Formas de Bolo",
+    name: "Formas de Bolo (3)",
     price: 54.9,
     image: "https://m.media-amazon.com/images/I/51RKjJvDP8L._AC_SX679_.jpg",
     claimed: false
@@ -101,7 +101,7 @@ const GiftRegistry = () => {
   },
   {
     id: 12,
-    name: "Potes Plásticos para Alimentos",
+    name: "Potes Hermeticos De Vidro (5)",
     price: 80.66,
     image: "https://m.media-amazon.com/images/I/51XKi+2Fk8L._AC_SX679_.jpg",
     claimed: false
@@ -115,7 +115,7 @@ const GiftRegistry = () => {
   },
   {
     id: 14,
-    name: "Lixeira",
+    name: "Lixeira (2)",
     price: 64.73,
     image: "https://m.media-amazon.com/images/I/51YosDexR5L._AC_SX679_.jpg",
     claimed: false
@@ -146,6 +146,90 @@ const GiftRegistry = () => {
     name: "Ferro de Passar Roupa",
     price: 59.99,
     image: "https://m.media-amazon.com/images/I/41lHDOIG3RL._AC_SX679_.jpg",
+    claimed: false
+  },
+  {
+    id: 19,
+    name: "Jogo de Toalhas de Banho (2)",
+    price: 59.99,
+    image: "https://m.media-amazon.com/images/I/81xfJzeVgbL._AC_SX679_.jpg",
+    claimed: false
+  },
+  {
+    id: 20,
+    name: "Jogo de Lençol Casal (2)",
+    price: 59.99,
+    image: "https://m.media-amazon.com/images/I/51BUDfQzZ8L._AC_SX522_.jpg",
+    claimed: false
+  },
+  {
+    id: 21,
+    name: "Conjunto de Porta Mantimentos",
+    price: 85.00,
+    image: "https://m.media-amazon.com/images/I/51nYTyI8XhL._AC_SY450_.jpg",
+    claimed: false
+  },
+  {
+    id: 22,
+    name: "Batedeira",
+    price: 103.09,
+    image: "https://m.media-amazon.com/images/I/61pK-lg00eL._AC_SY450_.jpg",
+    claimed: false
+  },
+  {
+    id: 23,
+    name: "Panela de Pressão 3L",
+    price: 85.00,
+    image: "https://m.media-amazon.com/images/I/51tfgtAqQ9L._AC_SX450_.jpg",
+    claimed: false
+  },
+  {
+    id: 24,
+    name: "Panela de Pressão 4.5L",
+    price: 85.00,
+    image: "https://m.media-amazon.com/images/I/51C+Oz7NWgL._AC_SY450_.jpg",
+    claimed: false
+  },
+  {
+    id: 25,
+    name: "Jogo de Jantar",
+    price: 85.00,
+    image: "https://m.media-amazon.com/images/I/51Cpf3GvBAL._AC_SY450_.jpg",
+    claimed: false
+  },
+  {
+    id: 26,
+    name: "Mixer",
+    price: 105.00,
+    image: "https://m.media-amazon.com/images/I/61HObNBOEJL._AC_SY450_.jpg",
+    claimed: false
+  },
+  {
+    id: 27,
+    name: "Cafeteira Eletrica",
+    price: 139.9,
+    image: "https://m.media-amazon.com/images/I/41QniS6pVmL._AC_SY450_.jpg",
+    claimed: false
+  },
+  {
+    id: 28,
+    name: "Conjunto de Talheres",
+    price: 79.9,
+    image: "https://m.media-amazon.com/images/I/61x2HGF7CfL._AC_SY450_.jpg",
+    claimed: false
+  },
+  {
+    id: 29,
+    name: "Conjunto de Talheres de Servir Silicone",
+    price: 64.9,
+    image: "https://m.media-amazon.com/images/I/51+7N6sPtqL._AC_SY450_.jpg",
+    claimed: false
+  },
+  {
+    id: 30,
+    name: "Cobre Leito Casal",
+    price: 89.9,
+    image: "https://m.media-amazon.com/images/I/61jLrPo5nGL._AC_SY450_.jpg",
     claimed: false
   }
 ]);
