@@ -1,4 +1,4 @@
-import React from 'react';
+import heroImage from "../public/leo-e-larissa.jpg";
 import { MapPin, Clock, Calendar } from 'lucide-react';
 
 const Location = () => {
@@ -17,7 +17,7 @@ const Location = () => {
             {/* Venue Image */}
             <div className="order-2 lg:order-1">
               <img
-                src="https://images.pexels.com/photos/1024960/pexels-photo-1024960.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
+                src={heroImage}
                 alt="Wedding Venue"
                 className="w-full h-80 object-cover rounded-2xl shadow-2xl"
               />

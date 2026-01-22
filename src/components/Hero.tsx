@@ -1,4 +1,4 @@
-import React from 'react';
+import heroImage from "../public/larissa-e-leo.jpg";
 
 const Hero = () => {
   return (
@@ -6,7 +6,7 @@ const Hero = () => {
       {/* Background Image */}
       <div className="absolute inset-0">
         <img
-          src="https://images.pexels.com/photos/1024960/pexels-photo-1024960.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop"
+          src={heroImage}
           alt="Larissa & Leonardo"
           className="w-full h-full object-cover"
         />
