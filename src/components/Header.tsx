@@ -25,7 +25,7 @@ const Header = () => {
     }`}>
       <div className="container mx-auto px-4 py-4">
         <nav className="flex items-center justify-between">
-          <div className="text-2xl font-windsong text-rose-600">
+          <div className="text-2xl font-windsong text-[#8CA7C0]">
             Larissa & Leonardo
           </div>
           

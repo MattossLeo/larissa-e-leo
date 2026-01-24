@@ -18,10 +18,7 @@ const Hero = () => {
         <h1 className="font-windsong text-6xl md:text-8xl lg:text-9xl mb-4 drop-shadow-2xl">
           Larissa & Leonardo
         </h1>
-        <div className="w-32 h-1 bg-gradient-to-r from-rose-400 to-pink-400 mx-auto mb-6"></div>
-        <p className="text-xl md:text-2xl font-light mb-8 drop-shadow-lg">
-          Juntos Para Sempre
-        </p>
+        <div className="w-32 h-1 bg-[#8CA7C0] to-pink-400 mx-auto mb-6"></div>
         <div className="text-lg md:text-xl font-medium">
           <p className="mb-2">11 de Abril, 2026</p>
           <p className="opacity-90">Reserve a Data</p>

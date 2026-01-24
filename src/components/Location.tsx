@@ -6,7 +6,7 @@ const Location = () => {
     <section id="location" className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="font-windsong text-5xl md:text-6xl text-rose-600 mb-4">
+          <h2 className="font-windsong text-5xl md:text-6xl text-[#8CA7C0] mb-4">
             Local do Casamento
           </h2>
           <p className="text-xl text-gray-600">Junte-se a nós em nosso lindo local de cerimônia</p>
@@ -19,7 +19,7 @@ const Location = () => {
               <img
                 src={heroImage}
                 alt="Wedding Venue"
-                className="w-full h-80 object-cover rounded-2xl shadow-2xl"
+                className="w-full object-cover rounded-2xl shadow-2xl"
               />
             </div>
 
@@ -31,15 +31,15 @@ const Location = () => {
                 </h3>
                 <div className="space-y-4">
                   <div className="flex items-start space-x-3">
-                    <MapPin className="text-rose-600 mt-1" size={20} />
+                    <MapPin className="text-[#8CA7C0] mt-1" size={20} />
                     <div>
-                      <p className="font-medium text-gray-800">Sitio Recanto Feliz</p>
+                      <p className="font-medium text-gray-800">Sítio Recanto Feliz</p>
                       <p className="text-gray-600">R. Taguara, 1306 A- Potyra (Caladão), Cel. Fabriciano - MG, 35171-078</p>
                     </div>
                   </div>
                   
                   <div className="flex items-start space-x-3">
-                    <Calendar className="text-rose-600 mt-1" size={20} />
+                    <Calendar className="text-[#8CA7C0] mt-1" size={20} />
                     <div>
                       <p className="font-medium text-gray-800">11 de Abril, 2026</p>
                       <p className="text-gray-600">Sábado</p>
@@ -47,7 +47,7 @@ const Location = () => {
                   </div>
                   
                   <div className="flex items-start space-x-3">
-                    <Clock className="text-rose-600 mt-1" size={20} />
+                    <Clock className="text-[#8CA7C0] mt-1" size={20} />
                     <div>
                       <p className="font-medium text-gray-800">18:00</p>
                       <p className="text-gray-600">Início da cerimônia</p>
@@ -56,7 +56,7 @@ const Location = () => {
                 </div>
               </div>
 
-              <div className="bg-rose-50 p-6 rounded-xl">
+              <div className="bg-gradient-to-br from-pink-50 to-rose-50 p-6 rounded-xl">
                 <h4 className="font-semibold text-gray-800 mb-2">Informações Importantes:</h4>
                 <ul className="text-gray-600 space-y-1 text-sm">
                   <li>• Estacionamento disponível no local</li>

@@ -231,6 +231,27 @@ const GiftRegistry = () => {
     price: 89.9,
     image: "https://m.media-amazon.com/images/I/61jLrPo5nGL._AC_SY450_.jpg",
     claimed: false
+  },
+  {
+    id: 31,
+    name: "Jogo de Toalha de Rosto",
+    price: 54.99,
+    image: "https://m.media-amazon.com/images/I/71dx9mw27WL._AC_SX522_.jpg",
+    claimed: false
+  },
+  {
+    id: 32,
+    name: "Jogo de Sousplat (2)",
+    price: 52.99,
+    image: "https://m.media-amazon.com/images/I/61zPIsCTWfL._AC_SY450_.jpg",
+    claimed: false
+  },
+  {
+    id: 33,
+    name: "Amolador de Faca",
+    price: 35.99,
+    image: "https://m.media-amazon.com/images/I/516y-oWee5L._AC_SY450_.jpg",
+    claimed: false
   }
 ]);
 
@@ -297,7 +318,7 @@ const GiftRegistry = () => {
       <div className="container mx-auto px-4">
 
         <div className='text-center'>
-          <h2 className='font-windsong text-5xl md:text-6xl text-rose-600 mb-4'>
+          <h2 className='font-windsong text-5xl md:text-6xl text-[#8CA7C0]-600 mb-4'>
             Lista de Presente
           </h2>
           <p className='text-xl text-gray-600  mb-4'>Nosso maior presente é a sua presença. Mas caso queira dar algo, separamos uma lista abaixo:</p>
@@ -308,13 +329,13 @@ const GiftRegistry = () => {
               <img src={gift.image} alt={gift.name} className="w-full h-64" />
               <div className="p-6">
                 <h3 className="text-xl font-semibold">{gift.name}</h3>
-                <p className="text-2xl text-rose-600 mb-4">
+                <p className="text-2xl text-[#8CA7C0] mb-4">
                   R$ {gift.price.toFixed(2).replace('.', ',')}
                 </p>
                 <button
                   onClick={() => openGiftModal(gift)}
                   disabled={gift.claimed}
-                  className="w-full bg-rose-600 text-white py-3 rounded-lg"
+                  className="w-full bg-[#8CA7C0] text-white py-3 rounded-lg"
                 >
                   <Gift className="inline w-5 h-5 mr-2" />
                   {gift.claimed ? 'Já Escolhido' : 'Escolher Este Presente'}
@@ -328,7 +349,7 @@ const GiftRegistry = () => {
         <div className="text-center mt-12">
           <button
             onClick={openCustomGiftModal}
-            className="text-rose-600 font-medium hover:underline"
+            className="text-[#8CA7C0] font-medium hover:underline"
           >
             Não encontrou o que gostaria de dar? Clique aqui
           </button>
@@ -385,6 +406,10 @@ const GiftRegistry = () => {
                 <button className="w-full bg-rose-600 text-white py-3 rounded-lg">
                   Confirmar Seleção do Presente
                 </button>
+                <div className='flex flex-col items-center justify-center text-black mt-5'>
+                  <span>Prefere contribuir em dinheiro?</span>
+                  <span>Pix: vliasnovaslarissa@gmail.com</span>
+                </div>
               </form>
             </div>
           </div>

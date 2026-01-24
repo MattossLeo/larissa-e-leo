@@ -36,9 +36,9 @@ const Countdown = () => {
   };
 
   return (
-    <section className="py-20 bg-gradient-to-r from-rose-100 to-pink-100">
+    <section className="py-20 bg-gradient-to-br from-pink-50 to-rose-50">
       <div className="container mx-auto px-4 text-center">
-        <h2 className="font-windsong text-5xl md:text-6xl text-rose-600 mb-4">
+        <h2 className="font-windsong text-5xl md:text-6xl text-[#8CA7C0] mb-4">
           Nosso Grande Dia
         </h2>
         <p className="text-xl text-gray-600 mb-12">Contagem regressiva para o para sempre</p>
@@ -46,7 +46,7 @@ const Countdown = () => {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
           {Object.entries(timeLeft).map(([unit, value]) => (
             <div key={unit} className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300">
-              <div className="text-4xl md:text-5xl font-bold text-rose-600 mb-2">
+              <div className="text-4xl md:text-5xl font-bold text-[#8CA7C0] mb-2">
                 {value.toString().padStart(2, '0')}
               </div>
               <div className="text-gray-600 uppercase tracking-wide text-sm font-medium">

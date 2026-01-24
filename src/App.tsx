@@ -13,10 +13,9 @@ function App() {
       <Header />
       <Hero />
       <Countdown />
-      <AboutUs />
       <Location />
-      <GiftRegistry />
       <RSVP />
+      <GiftRegistry />
       <Footer />
     </div>
   );
