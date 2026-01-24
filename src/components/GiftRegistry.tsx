@@ -328,7 +328,7 @@ const GiftRegistry = () => {
             <div key={gift.id} className="bg-white rounded-2xl shadow-lg overflow-hidden">
               <img src={gift.image} alt={gift.name} className="w-full h-64" />
               <div className="p-6">
-                <h3 className="text-xl font-semibold">{gift.name}</h3>
+                <h3 className="text-xl font-semibold pb-3">{gift.name}</h3>
                 {/*<p className="text-2xl text-[#8CA7C0] mb-4">
                   R$ {gift.price.toFixed(2).replace('.', ',')}
                 </p>*/}
