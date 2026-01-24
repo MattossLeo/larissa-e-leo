@@ -34,7 +34,7 @@ const Location = () => {
                     <MapPin className="text-[#8CA7C0] mt-1" size={20} />
                     <div>
                       <p className="font-medium text-gray-800">Sítio Recanto Feliz</p>
-                      <p className="text-gray-600">R. Taguara, 1306 A- Potyra (Caladão), Cel. Fabriciano - MG, 35171-078</p>
+                      <p className="text-gray-600">R. Taguara, 1306 A- Contente, Cel. Fabriciano - MG, 35171-078</p>
                     </div>
                   </div>
                   
