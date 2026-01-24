@@ -329,9 +329,9 @@ const GiftRegistry = () => {
               <img src={gift.image} alt={gift.name} className="w-full h-64" />
               <div className="p-6">
                 <h3 className="text-xl font-semibold">{gift.name}</h3>
-                <p className="text-2xl text-[#8CA7C0] mb-4">
+                {/*<p className="text-2xl text-[#8CA7C0] mb-4">
                   R$ {gift.price.toFixed(2).replace('.', ',')}
-                </p>
+                </p>*/}
                 <button
                   onClick={() => openGiftModal(gift)}
                   disabled={gift.claimed}
