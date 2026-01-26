@@ -252,6 +252,34 @@ const GiftRegistry = () => {
     price: 35.99,
     image: "https://m.media-amazon.com/images/I/516y-oWee5L._AC_SY450_.jpg",
     claimed: false
+  },
+  {
+    id: 34,
+    name: "Jogo de Sobremesas (2)",
+    price: 35.99,
+    image: "https://m.media-amazon.com/images/I/713BHcGUhSL._AC_SX679_.jpg",
+    claimed: false
+  },
+  {
+    id: 35,
+    name: "Tigela de Porcela (4)",
+    price: 35.99,
+    image: "https://m.media-amazon.com/images/I/41ZJKu4iOOL._AC_SX679_.jpg",
+    claimed: false
+  },
+  {
+    id: 36,
+    name: "Relogio de Parede",
+    price: 35.99,
+    image: "https://m.media-amazon.com/images/I/619M+d0tDhL._AC_SX679_.jpg",
+    claimed: false
+  },
+  {
+    id: 37,
+    name: "Porta Frios de Vidro",
+    price: 35.99,
+    image: "https://m.media-amazon.com/images/I/71GEEyp49DL._AC_SX569_.jpg",
+    claimed: false
   }
 ]);
 
@@ -325,17 +353,29 @@ const GiftRegistry = () => {
         </div>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {gifts.map(gift => (
-            <div key={gift.id} className="bg-white rounded-2xl shadow-lg overflow-hidden">
-              <img src={gift.image} alt={gift.name} className="w-full h-64" />
-              <div className="p-6">
-                <h3 className="text-xl font-semibold pb-3">{gift.name}</h3>
-                {/*<p className="text-2xl text-[#8CA7C0] mb-4">
-                  R$ {gift.price.toFixed(2).replace('.', ',')}
-                </p>*/}
+            <div
+              key={gift.id}
+              className="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col"
+            >
+              {/* Área da imagem */}
+              <div className="w-full h-64 bg-gray-50 flex items-center justify-center">
+                <img
+                  src={gift.image}
+                  alt={gift.name}
+                  className="max-w-[85%] max-h-[85%] object-contain"
+                />
+              </div>
+
+              {/* Conteúdo */}
+              <div className="p-6 flex flex-col flex-1">
+                <h3 className="text-xl font-semibold pb-4 text-center">
+                  {gift.name}
+                </h3>
+
                 <button
                   onClick={() => openGiftModal(gift)}
                   disabled={gift.claimed}
-                  className="w-full bg-[#8CA7C0] text-white py-3 rounded-lg"
+                  className="mt-auto w-full bg-[#8CA7C0] text-white py-3 rounded-lg disabled:opacity-60"
                 >
                   <Gift className="inline w-5 h-5 mr-2" />
                   {gift.claimed ? 'Já Escolhido' : 'Escolher Este Presente'}
