@@ -65,20 +65,6 @@ const GiftRegistry = () => {
     claimed: false
   },
   {
-    id: 7,
-    name: "Saleiro e Porta-Temperos",
-    price: 60.08,
-    image: "https://m.media-amazon.com/images/I/81-Q32GntJL._AC_SX679_.jpg",
-    claimed: false
-  },
-  {
-    id: 8,
-    name: "Travessa de Vidro (3)",
-    price: 65.9,
-    image: "https://m.media-amazon.com/images/I/61pJO7eBJlL._AC_SX679_.jpg",
-    claimed: false
-  },
-  {
     id: 9,
     name: "Formas de Bolo (3)",
     price: 54.9,
@@ -128,13 +114,6 @@ const GiftRegistry = () => {
     claimed: false
   },
   {
-    id: 16,
-    name: "Cesto de Roupa",
-    price: 87,
-    image: "https://m.media-amazon.com/images/I/61b8QzlC2vL._AC_SX679_.jpg",
-    claimed: false
-  },
-  {
     id: 17,
     name: "Varal",
     price: 70.19,
@@ -160,13 +139,6 @@ const GiftRegistry = () => {
     name: "Jogo de Lençol Casal (2)",
     price: 59.99,
     image: "https://m.media-amazon.com/images/I/51BUDfQzZ8L._AC_SX522_.jpg",
-    claimed: false
-  },
-  {
-    id: 21,
-    name: "Conjunto de Porta Mantimentos",
-    price: 85.00,
-    image: "https://m.media-amazon.com/images/I/51nYTyI8XhL._AC_SY450_.jpg",
     claimed: false
   },
   {
@@ -212,13 +184,6 @@ const GiftRegistry = () => {
     claimed: false
   },
   {
-    id: 28,
-    name: "Conjunto de Talheres",
-    price: 79.9,
-    image: "https://m.media-amazon.com/images/I/61x2HGF7CfL._AC_SY450_.jpg",
-    claimed: false
-  },
-  {
     id: 29,
     name: "Conjunto de Talheres de Servir Silicone",
     price: 64.9,
@@ -244,13 +209,6 @@ const GiftRegistry = () => {
     name: "Jogo de Sousplat (2)",
     price: 52.99,
     image: "https://m.media-amazon.com/images/I/61zPIsCTWfL._AC_SY450_.jpg",
-    claimed: false
-  },
-  {
-    id: 33,
-    name: "Amolador de Faca",
-    price: 35.99,
-    image: "https://m.media-amazon.com/images/I/516y-oWee5L._AC_SY450_.jpg",
     claimed: false
   },
   {
