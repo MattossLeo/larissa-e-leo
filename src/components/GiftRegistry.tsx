@@ -101,7 +101,7 @@ const GiftRegistry = () => {
   },
   {
     id: 14,
-    name: "Lixeira (2)",
+    name: "Lixeira (1)",
     price: 64.73,
     image: "https://m.media-amazon.com/images/I/51YosDexR5L._AC_SX679_.jpg",
     claimed: false
@@ -118,13 +118,6 @@ const GiftRegistry = () => {
     name: "Varal",
     price: 70.19,
     image: "https://m.media-amazon.com/images/I/41GgSwnN0nL._AC_SX679_.jpg",
-    claimed: false
-  },
-  {
-    id: 18,
-    name: "Ferro de Passar Roupa",
-    price: 59.99,
-    image: "https://m.media-amazon.com/images/I/41lHDOIG3RL._AC_SX679_.jpg",
     claimed: false
   },
   {
@@ -184,13 +177,6 @@ const GiftRegistry = () => {
     claimed: false
   },
   {
-    id: 29,
-    name: "Conjunto de Talheres de Servir Silicone",
-    price: 64.9,
-    image: "https://m.media-amazon.com/images/I/51+7N6sPtqL._AC_SY450_.jpg",
-    claimed: false
-  },
-  {
     id: 30,
     name: "Cobre Leito Casal",
     price: 89.9,
@@ -230,13 +216,6 @@ const GiftRegistry = () => {
     name: "Relogio de Parede",
     price: 35.99,
     image: "https://m.media-amazon.com/images/I/619M+d0tDhL._AC_SX679_.jpg",
-    claimed: false
-  },
-  {
-    id: 37,
-    name: "Porta Frios de Vidro",
-    price: 35.99,
-    image: "https://m.media-amazon.com/images/I/71GEEyp49DL._AC_SX569_.jpg",
     claimed: false
   }
 ]);
