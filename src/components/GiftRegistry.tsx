@@ -107,13 +107,6 @@ const GiftRegistry = () => {
     claimed: false
   },
   {
-    id: 15,
-    name: "Mop Giratório",
-    price: 170.90,
-    image: "https://m.media-amazon.com/images/I/61wZKmt5WQL._AC_SX679_.jpg",
-    claimed: false
-  },
-  {
     id: 17,
     name: "Varal",
     price: 70.19,
@@ -132,13 +125,6 @@ const GiftRegistry = () => {
     name: "Jogo de Lençol Casal (2)",
     price: 59.99,
     image: "https://m.media-amazon.com/images/I/51BUDfQzZ8L._AC_SX522_.jpg",
-    claimed: false
-  },
-  {
-    id: 22,
-    name: "Batedeira",
-    price: 103.09,
-    image: "https://m.media-amazon.com/images/I/61pK-lg00eL._AC_SY450_.jpg",
     claimed: false
   },
   {
@@ -192,7 +178,7 @@ const GiftRegistry = () => {
   },
   {
     id: 32,
-    name: "Jogo de Sousplat (2)",
+    name: "Jogo de Sousplat (1)",
     price: 52.99,
     image: "https://m.media-amazon.com/images/I/61zPIsCTWfL._AC_SY450_.jpg",
     claimed: false
