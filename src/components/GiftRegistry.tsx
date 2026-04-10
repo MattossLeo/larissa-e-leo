@@ -23,13 +23,6 @@ const GiftRegistry = () => {
 
   const [gifts, setGifts] = useState<GiftItem[]>([
   {
-    id: 1,
-    name: "Jogo de Panelas Antiaderentes",
-    price: 274.71,
-    image: "https://m.media-amazon.com/images/I/71feuVPHh+L._AC_SL1500_.jpg",
-    claimed: false
-  },
-  {
     id: 2,
     name: "Jogo de Copos (2)",
     price: 34.97,
@@ -58,13 +51,6 @@ const GiftRegistry = () => {
     claimed: false
   },
   {
-    id: 6,
-    name: "Garrafas de Água de Vidro (4)",
-    price: 22.9,
-    image: "https://m.media-amazon.com/images/I/41SLX0+OcDL._AC_SX679_.jpg",
-    claimed: false
-  },
-  {
     id: 9,
     name: "Formas de Bolo (3)",
     price: 54.9,
@@ -90,13 +76,6 @@ const GiftRegistry = () => {
     name: "Potes Hermeticos De Vidro (5)",
     price: 80.66,
     image: "https://m.media-amazon.com/images/I/51XKi+2Fk8L._AC_SX679_.jpg",
-    claimed: false
-  },
-  {
-    id: 13,
-    name: "Porta Escova de Dentes",
-    price: 42.76,
-    image: "https://m.media-amazon.com/images/I/51qLUYifovL._AC_SX679_.jpg",
     claimed: false
   },
   {
